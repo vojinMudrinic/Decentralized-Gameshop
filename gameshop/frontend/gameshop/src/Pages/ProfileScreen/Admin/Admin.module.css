@@ -1,0 +1,110 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+}
+
+.claimButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 3px solid black;
+  background-color: rgb(202, 202, 14);
+  height: fit-content;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.claimButton:hover::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+  left: -8px;
+}
+
+.modalWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid black;
+  background-color: rgb(202, 202, 14);
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+}
+
+.loadingMessage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+  min-width: 360px;
+  min-height: 300px;
+}
+
+.balance {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 50%;
+  border: 3px solid black;
+  align-items: center;
+}
+
+.priceWrapper {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+}
+
+.priceWrapper svg {
+  width: 40px;
+  height: 40px;
+}
+
+.logPriceWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logPriceWrapper svg {
+  width: 25px;
+  height: 25px;
+}
+
+.logs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 3px solid black;
+  max-height: 600px;
+  overflow: auto;
+  width: 50%;
+  padding: 20px;
+  justify-content: center;
+}
+
+.log {
+  display: flex;
+  justify-content: space-between;
+}

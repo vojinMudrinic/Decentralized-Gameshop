@@ -37,6 +37,6 @@ The game/product can have next status:<br/>
 6. Create test accounts. At least create 2 so both admin and customer features can be experienced.
 7. Choose one of the accounts that you want to deploy the contract and be admin and in Metamask go to account details and copy the private key and set it to PRIVATE_KEY variable in .env file.
 8. Visit [Infura](https://app.infura.io/dashboard) and get an API key that you will set to INFURA_API variable that is in your .env file.
-9. You now need "fake eather" from faucets. Use [Infura](https://www.infura.io/faucet/sepolia?_ga=2.265557967.1197685563.1701293227-1320897488.1700514236) for one account and [Alchemy](https://sepoliafaucet.com/) for other, there is a 24 hour cooldown.
+9. You now need "fake eather" from faucets. Use [Infura](https://www.infura.io/faucet/sepolia) for one account and [Alchemy](https://sepoliafaucet.com/) for other, there is a 24 hour cooldown.
 10. Once API keys are set, go to gameshop\backend and in the terminal run "npx hardhat run scripts/deploy.js --network sepolia". You will be notified in the terminal once the contract is deployed to an address.
 11. Inside gameshop\frontend\gameshop run "npm run start" to start the frontend application.
